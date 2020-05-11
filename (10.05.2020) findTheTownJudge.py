@@ -53,3 +53,22 @@ class Solution:
             if (count[i] == N - 1):
                 return i
         return -1
+    
+#Iterating through trust without pair syntax [Time - 792ms (> 63.56%), Memory - 18.3MB]
+class Solution:
+    def findJudge(self, N: int, trust: List[List[int]]) -> int:
+        
+        #Initial count for every person
+        count = [0] * (N+1) ###INITIALIZING ARRAYS 101###
+        
+        for i in trust: ###NEAT LITTLE WAY OF TRAVERSING i,j SIMULTANEOUSLY###
+            #If person appears in the LHS, decrement (essentially ruling him out)
+            count[i[0]] -= 1
+            #If person appears in the RHS, increment (essentially equaling that count to N - 1)
+            count[i[1]] += 1
+            
+        for i in range(1, len(count)):
+            #If the trust count equals to N - 1 (Everyone trusts person except self)
+            if (count[i] == N - 1):
+                return i
+        return -1
