@@ -8,3 +8,4 @@
 |  4   | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | Intuitive | Set | O(n<sup>2</sup>) | O(1) | :wavy_dash:
 |  5   | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge) | Hard | Intuitive (88/89) | - | O(n<sup>2</sup>) | O(n) | :heavy_check_mark:
 |  6   | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Inter | - | Dictionary | O(r * m) | O(m) | :heavy_check_mark:
+|  7   | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Inter | Prefix Difference | Dictionary | O(n) | O(n) | :heavy_check_mark:
